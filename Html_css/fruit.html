@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水果库存静态页面</title>
+    <link rel="stylesheet" href="./css/fruit.css"/>
+    <script type="text/javascript" src="js/fruit.js"></script>
+</head>
+<body>
+<!--    整体外盒子-->
+    <div class="div_float" id="div_all">
+        <div class="div_float" id="div_title">
+            <h1 id="text_title">水果库存表格</h1>
+        </div>
+<!--        内部表格盒子-->
+        <div class="div_float" id="div_none">
+<!--            水果库存表格-->
+            <table class="table_border" id="fruit_table">
+                <tr>
+                    <th class="table_border">名称</th>
+                    <th class="table_border">单价</th>
+                    <th class="table_border">数量</th>
+                    <th class="table_border">小计</th>
+                    <th class="table_border">操作</th>
+                </tr>
+                <tr>
+                    <td class="table_border">西瓜</td>
+                    <td class="table_border">13</td>
+                    <td class="table_border">100</td>
+                    <td class="table_border">1300</td>
+                    <td class="table_border"><img src="img/del.png"></td>
+                </tr>
+                <tr>
+                    <td class="table_border">苹果</td>
+                    <td class="table_border">4</td>
+                    <td class="table_border">50</td>
+                    <td class="table_border">200</td>
+                    <td class="table_border"><img src="img/del.png"></td>
+                </tr>
+                <tr>
+                    <td class="table_border">葡萄</td>
+                    <td class="table_border">8</td>
+                    <td class="table_border">200</td>
+                    <td class="table_border">1600</td>
+                    <td class="table_border"><img src="img/del.png"></td>
+                </tr>
+                <tr>
+                    <td class="table_border">栗子</td>
+                    <td class="table_border">10</td>
+                    <td class="table_border">150</td>
+                    <td class="table_border">1500</td>
+                    <td class="table_border"><img src="img/del.png"></td>
+                </tr>
+                <tr>
+                    <td class="table_border">总计</td>
+                    <td class="table_border" colspan="4">4600</td>
+                </tr>
+            </table>
+        </div>
+<!--        作者盒子-->
+        <div class="div_float" id="writer">
+            <p> Atmujie 练手之作</p>
+        </div>
+    </div>
+<!--提交功能盒子-->
+    <div id="div_add">
+        <table>
+            <tr><th>添加库存表项</th></tr>
+            <tr><th>名称：<input type="text" id="name_input"></th></tr>
+            <tr><th>单价：<input type="text" id="unitPrice_input"></th></tr>
+            <tr><th>数量：<input type="text" id="amount_input"></th></tr>
+            <tr><th>
+                <input class="tableButton" id="resetInput" type="button" value="重置"/>
+                <input class="tableButton" id="submitInput" type="button" value="提交"/>
+            </th></tr>
+        </table>
+    </div>
+</body>
+</html>
