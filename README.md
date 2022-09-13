@@ -1,0 +1,2 @@
+# shangguigu-static_fruit_page
+尚硅谷2022版javaweb教程前端部分，静态水果页面的模拟练习
