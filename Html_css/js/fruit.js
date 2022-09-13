@@ -10,6 +10,20 @@ window.onload = function(){
     addTD.addEventListener("click",function () {
         addList(table,row.length);
     },false)
+    // 重置事件
+    let resetInput = document.getElementById(`resetInput`);
+    resetInput.addEventListener("click",function () {
+        resetInputBox(resetInput);
+    },false)
+}
+// 重置添加输入框
+function resetInputBox(input){
+    let table = input.parentElement.parentElement.parentElement;
+    let row = table.rows;
+    for (let i = 1; i < row.length - 1; i++) {
+        let inp = row[i].cells[0].childNodes[1];
+        inp.value = null
+    }
 }
 // tr事件
 function trElement(tr){
@@ -63,6 +77,7 @@ function addList(table,len){
     del.innerHTML = "<img src=\"img/del.png\">";
     del.className = "table_border";
     trElement(tr);
+    updateTotal()
 }
 // 删除列表中一行
 function delTR(tr){
